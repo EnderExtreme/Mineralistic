@@ -22,6 +22,7 @@ public class ModBlocks {
 		sandOre = new BlockOreSand();
 		
         GameRegistry.registerBlock(gravelOre, ItemBlockOreGravel.class, gravelOreUnlocalizedName);
+        
         GameRegistry.registerBlock(sandOre, ItemBlockOreSand.class, sandOreUnlocalizedName);
     }
 }

@@ -4,6 +4,7 @@ import net.minecraft.init.Blocks;
 
 import com.rong.mineralistic.init.ModBlocks;
 import com.rong.mineralistic.proxies.CommonProxy;
+import com.rong.mineralistic.recipes.FurnaceSmeltingRecipes;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -30,7 +31,7 @@ public class Mineralistic {
 	private void preInit(FMLPreInitializationEvent preInitEvent) {
 		
 		ModBlocks.init();
-		
+		FurnaceSmeltingRecipes.init();
 	}
 	
 	@EventHandler
