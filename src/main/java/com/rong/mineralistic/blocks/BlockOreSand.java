@@ -20,9 +20,9 @@ public class BlockOreSand extends Block {
 	private IIcon[] textures;
 
 	//Constructor
-	public BlockOreSand(Material material) {
-		super(material);
-		setBlockName("mineralistic.sand_ore");
+	public BlockOreSand() {
+		super(Material.sand);
+		setBlockName("sand_ore");
 		setCreativeTab(CreativeTabs.tabBlock);
 		setHardness(3.0F);
 		setResistance(5.0F);
@@ -32,8 +32,8 @@ public class BlockOreSand extends Block {
 	
 	//For metadata, may need a BlockOreSand2
 	static final String[] sandOreTypes = new String[] {
-		"Diamond", "Gold", "Iron", "Redstone"
-	};
+			"coal", "copper", "diamond", "emerald", "gold", "iron", "lapis", "lead", "nickel", "redstone", "silver", "tin" 
+		};
 	
 	//Loops through all the blocks to register its texture
 	@Override
@@ -41,20 +41,17 @@ public class BlockOreSand extends Block {
 		textures = new IIcon[sandOreTypes.length];
 		
 		for(int i = 0; i < sandOreTypes.length; i++) {
-			textures[i] = iconReg.registerIcon(Mineralistic.MODID + ":" + ModBlocks.sandOreUnlocalisedName);
+			textures[i] = iconReg.registerIcon(Mineralistic.MODID + ":" + ModBlocks.sandOreUnlocalizedName + "_" + sandOreTypes[i]);
 		}
 	}
 	
-	//This allows anyone who spawns in a block thats OoR in our metadata to not crash but receive metadata 0 of the block
 	public IIcon getIcon(int side, int meta) {
-		if(meta > sandOreTypes.length) {
-			meta = 0;
-		}
 		return textures[meta];
 	}
 	
 	//Loop through all the blocks
-	public void getMetaBlocks(Item item, CreativeTabs tab, List list) {
+	@Override
+	public void getSubBlocks(Item item, CreativeTabs tab, List list) {
 	    for (int i = 0; i < sandOreTypes.length; i ++) {
 	        list.add(new ItemStack(item, 1, i));
 	    }
