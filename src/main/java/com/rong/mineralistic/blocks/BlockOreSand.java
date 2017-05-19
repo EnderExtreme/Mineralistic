@@ -22,12 +22,12 @@ public class BlockOreSand extends Block {
 	//Constructor
 	public BlockOreSand() {
 		super(Material.sand);
-		setBlockName("sand_ore");
-		setCreativeTab(CreativeTabs.tabBlock);
-		setHardness(3.0F);
-		setResistance(5.0F);
-		setHarvestLevel("shovel", 1);
-		setStepSound(soundTypeSand);
+		this.setBlockName("sand_ore");
+		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setHardness(3.0F);
+		this.setResistance(5.0F);
+		this.setHarvestLevel("shovel", 1);
+		this.setStepSound(soundTypeSand);
 	}
 	
 	//For metadata, may need a BlockOreSand2

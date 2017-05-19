@@ -2,9 +2,11 @@ package com.rong.mineralistic.blocks;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import com.rong.mineralistic.Mineralistic;
 import com.rong.mineralistic.init.ModBlocks;
+import com.rong.mineralistic.items.ItemNuggets;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -22,12 +24,12 @@ public class BlockOreGravel extends Block {
 	//Constructor
 	public BlockOreGravel() {
 		super(Material.sand);
-		setBlockName("gravel_ore");
-		setCreativeTab(CreativeTabs.tabBlock);
-		setHardness(3.0F);
-		setResistance(7.0F);
-		setHarvestLevel("shovel", 2);
-		setStepSound(soundTypeGravel);
+		this.setBlockName("gravel_ore");
+		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setHardness(3.0F);
+		this.setResistance(7.0F);
+		this.setHarvestLevel("shovel", 2);
+		this.setStepSound(soundTypeGravel);
 	}
 	
 	//For metadata, may need a BlockOreGravel2
@@ -55,7 +57,7 @@ public class BlockOreGravel extends Block {
 	//Loop through all the blocks
 	@Override
 	public void getSubBlocks(Item item, CreativeTabs tab, List list) {
-	    for (int i = 0; i < gravelOreTypes.length; i ++) {
+	    for (int i = 0; i < gravelOreTypes.length; i++) {
 	        list.add(new ItemStack(item, 1, i));
 	    }
 	}
@@ -65,4 +67,24 @@ public class BlockOreGravel extends Block {
 	public int damageDropped(int meta) {
 	    return meta;
 	}
+	
+	@Override
+	public ArrayList<ItemStack> getDrops(World world, int x, int y, int z, int metadata, int fortune) {
+		
+		ArrayList<ItemStack> drops = new ArrayList<ItemStack>();
+		drops.add(new ItemStack(ItemNuggets.nuggets[1]));
+		
+		int count = quantityDropped(metadata, fortune, world.rand);
+        for(int i = 0; i < count; i++)
+        {
+            Item item = getItemDropped(metadata, world.rand, fortune);
+            if (item != null)
+            {
+                drops.add(new ItemStack(item, 1, damageDropped(metadata)));
+            }
+        }
+        return drops;
+	}
+	
 }
+

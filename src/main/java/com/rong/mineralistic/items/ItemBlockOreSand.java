@@ -12,7 +12,7 @@ public class ItemBlockOreSand extends ItemBlock {
 
 	public ItemBlockOreSand(Block blockItems) {
 		super(blockItems);
-		setHasSubtypes(true);
+		this.setHasSubtypes(true);
 	}
 	
 	public String getUnlocalizedName(ItemStack itemstack) {

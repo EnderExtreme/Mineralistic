@@ -12,7 +12,7 @@ public class ItemBlockOreGravel extends ItemBlock {
 
 	public ItemBlockOreGravel(Block blockItems) {
 		super(blockItems);
-		setHasSubtypes(true);
+		this.setHasSubtypes(true);
 	}
 	
 	public String getUnlocalizedName(ItemStack itemstack) {
