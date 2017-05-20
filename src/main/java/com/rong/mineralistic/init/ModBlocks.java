@@ -17,8 +17,8 @@ public class ModBlocks {
 	public static BlockOreSand sandOre; 
 	
 	public static final void init() {
-		//gravelOre = new BlockOreGravel();
-		//sandOre = new BlockOreSand();
+		gravelOre = new BlockOreGravel();
+		sandOre = new BlockOreSand();
 		
         GameRegistry.registerBlock(gravelOre, ItemBlockOreGravel.class, gravelOreUnlocalizedName);
         

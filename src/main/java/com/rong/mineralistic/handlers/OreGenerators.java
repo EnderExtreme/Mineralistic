@@ -23,7 +23,7 @@ public abstract class OreGenerators implements IWorldGenerator {
 	    }
 	}
 	
-	private WorldGenerator gravelOre; //Generates Gravel Ores (used in Overworld)
+	private WorldGenerator gravelOre;
 	private WorldGenerator sandOre;
 
 	public OreGenerators() {
