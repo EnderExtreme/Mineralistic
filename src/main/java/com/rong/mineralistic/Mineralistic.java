@@ -2,6 +2,8 @@ package com.rong.mineralistic;
 
 import net.minecraft.init.Blocks;
 
+import com.rong.mineralistic.handlers.GravelOreGenerator;
+import com.rong.mineralistic.handlers.SandOreGenerator;
 import com.rong.mineralistic.init.ModBlocks;
 import com.rong.mineralistic.init.ModItems;
 import com.rong.mineralistic.proxies.CommonProxy;
@@ -14,6 +16,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid = Mineralistic.MODID, name = Mineralistic.NAME, version = Mineralistic.VERSION, acceptedMinecraftVersions = "[1.7.10]")
 
@@ -39,6 +42,8 @@ public class Mineralistic {
 	@EventHandler
 	private void init(FMLInitializationEvent initEvent) {
 		
+		GameRegistry.registerWorldGenerator(new GravelOreGenerator(), 0);
+		GameRegistry.registerWorldGenerator(new SandOreGenerator(), 1);
 	}
 	
 	@EventHandler

@@ -8,9 +8,9 @@ tile.gravel_ore_iron.name=Hematite Gravel Ore
 tile.gravel_ore_lapis.name=Lapis Gravel Ore
 tile.gravel_ore_lead.name=Galena Gravel Ore
 tile.gravel_ore_nickel.name=Nickel Gravel Ore
-tile.gravel_ore_redstone.name=Redstone Gravel 
-tile.gravel_ore_silver.name=Silver Gravel
-tile.gravel_ore_tin.name=Cassiterite Gravel
+tile.gravel_ore_redstone.name=Redstone Gravel Ore
+tile.gravel_ore_silver.name=Silver Gravel Ore
+tile.gravel_ore_tin.name=Cassiterite Gravel Ore
 
 #Item Names
 

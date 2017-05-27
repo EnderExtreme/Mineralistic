@@ -103,7 +103,7 @@ public class BlockOreGravel extends Block {
 		
 		//If lapis gravel ore is mined, drops less than 8 lapis gems
 		else if (metadata == 6) {
-			drops.add(new ItemStack(Items.dye, world.rand.nextInt(9), 4));
+			drops.add(new ItemStack(Items.dye, world.rand.nextInt(9) + 6, 4));
 		}
 		
 		//If lead gravel ore is mined, drops less than 7 lead nuggets
@@ -118,7 +118,7 @@ public class BlockOreGravel extends Block {
 		
 		//If redstone gravel ore is mined, drops less than 9 redstone dust
 		else if (metadata == 9) {
-			drops.add(new ItemStack(Items.redstone, world.rand.nextInt(9)));
+			drops.add(new ItemStack(Items.redstone, world.rand.nextInt(9) + 6));
 		}
 		
 		//If silver gravel ore is mined, drops less than 7 silver nuggets
