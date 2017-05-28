@@ -1,16 +1,15 @@
 #Ore names
-tile.gravel_ore_coal.name=Coal Gravel Ore
-tile.gravel_ore_copper.name=Tetrahedrite Gravel Ore
-tile.gravel_ore_diamond.name=Precious Diamond Gravel Ore
-tile.gravel_ore_emerald.name=Precious Emerald Gravel Ore
-tile.gravel_ore_gold.name=Native Gold Gravel Ore
-tile.gravel_ore_iron.name=Hematite Gravel Ore
-tile.gravel_ore_lapis.name=Lapis Gravel Ore
-tile.gravel_ore_lead.name=Galena Gravel Ore
-tile.gravel_ore_nickel.name=Nickel Gravel Ore
-tile.gravel_ore_redstone.name=Redstone Gravel Ore
-tile.gravel_ore_silver.name=Silver Gravel Ore
-tile.gravel_ore_tin.name=Cassiterite Gravel Ore
+tile.gravel_ore_copper.name=Tetrahedrite Gravel
+tile.gravel_ore_diamond.name=Precious Diamond Gravel
+tile.gravel_ore_emerald.name=Precious Emerald Gravel
+tile.gravel_ore_gold.name=Native Gold Gravel
+tile.gravel_ore_iron.name=Iron Gravel
+tile.gravel_ore_lapis.name=Lapis Gravel
+tile.gravel_ore_lead.name=Lead Gravel
+tile.gravel_ore_nickel.name=Nickel Gravel
+tile.gravel_ore_redstone.name=Redstone Gravel
+tile.gravel_ore_silver.name=Silver Gravel
+tile.gravel_ore_tin.name=Cassiterite Gravel
 
 #Item Names
 

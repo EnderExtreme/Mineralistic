@@ -8,7 +8,6 @@ import com.rong.mineralistic.handlers.OreGenerator;
 import com.rong.mineralistic.init.ModBlocks;
 import com.rong.mineralistic.init.ModItems;
 import com.rong.mineralistic.proxies.CommonProxy;
-import com.rong.mineralistic.recipes.FurnaceSmeltingRecipes;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -37,7 +36,6 @@ public class Mineralistic {
 		
 		ModBlocks.init();
 		ModItems.init();
-		FurnaceSmeltingRecipes.init();
 	}
 	
 	@EventHandler

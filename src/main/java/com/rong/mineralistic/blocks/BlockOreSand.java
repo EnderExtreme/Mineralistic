@@ -10,6 +10,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
@@ -21,18 +22,30 @@ public class BlockOreSand extends Block {
 
 	//Constructor
 	public BlockOreSand() {
-		super(Material.sand);
+		super(Material.ground);
 		this.setBlockName("sand_ore");
 		this.setCreativeTab(CreativeTabs.tabBlock);
 		this.setHardness(3.0F);
 		this.setResistance(5.0F);
-		this.setHarvestLevel("shovel", 1);
 		this.setStepSound(soundTypeSand);
+		
+		//0=wood; 1=stone; 2=iron; 3=diamond
+		this.setHarvestLevel("shovel", 1, 0);
+		this.setHarvestLevel("shovel", 2, 1);
+		this.setHarvestLevel("shovel", 2, 2);
+		this.setHarvestLevel("shovel", 2, 3);
+		this.setHarvestLevel("shovel", 1, 4);
+		this.setHarvestLevel("shovel", 1, 5);
+		this.setHarvestLevel("shovel", 2, 6);
+		this.setHarvestLevel("shovel", 2, 7);
+		this.setHarvestLevel("shovel", 2, 8);
+		this.setHarvestLevel("shovel", 2, 9);
+		this.setHarvestLevel("shovel", 1, 10);
 	}
 	
 	//For metadata, may need a BlockOreSand2
 	static final String[] sandOreTypes = new String[] {
-			"coal", "copper", "diamond", "emerald", "gold", "iron", "lapis", "lead", "nickel", "redstone", "silver", "tin" 
+			"copper", "diamond", "emerald", "gold", "iron", "lapis", "lead", "nickel", "redstone", "silver", "tin" 
 		};
 	
 	//Loops through all the blocks to register its texture
@@ -56,6 +69,12 @@ public class BlockOreSand extends Block {
 	        list.add(new ItemStack(item, 1, i));
 	    }
 	}
+	
+	@Override
+	public String getHarvestTool(int metadata)
+    {
+        return sandOreTypes[metadata];
+    }
 	
 	//Self-explanatory
 	@Override

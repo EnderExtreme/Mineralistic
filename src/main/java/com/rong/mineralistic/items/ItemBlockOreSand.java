@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 public class ItemBlockOreSand extends ItemBlock {
 	
 	static final String[] sandOreTypes = new String[] {
-			"coal", "copper", "diamond", "emerald", "gold", "iron", "lapis", "lead", "nickel", "redstone", "silver", "tin" 
+			"copper", "diamond", "emerald", "gold", "iron", "lapis", "lead", "nickel", "redstone", "silver", "tin" 
 		};
 
 	public ItemBlockOreSand(Block blockItems) {
