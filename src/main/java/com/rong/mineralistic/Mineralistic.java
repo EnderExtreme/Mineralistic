@@ -3,7 +3,8 @@ package com.rong.mineralistic;
 import net.minecraft.init.Blocks;
 
 import com.rong.mineralistic.handlers.GravelOreGenerator;
-import com.rong.mineralistic.handlers.SandOreGenerator;
+import com.rong.mineralistic.handlers.OreDictHandler;
+import com.rong.mineralistic.handlers.OreGenerator;
 import com.rong.mineralistic.init.ModBlocks;
 import com.rong.mineralistic.init.ModItems;
 import com.rong.mineralistic.proxies.CommonProxy;
@@ -42,8 +43,9 @@ public class Mineralistic {
 	@EventHandler
 	private void init(FMLInitializationEvent initEvent) {
 		
-		GameRegistry.registerWorldGenerator(new GravelOreGenerator(), 0);
-		GameRegistry.registerWorldGenerator(new SandOreGenerator(), 1);
+		OreDictHandler.init();
+		GameRegistry.registerWorldGenerator(new OreGenerator(), 0);
+
 	}
 	
 	@EventHandler

@@ -12,7 +12,7 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
 
-public class SandOreGenerator implements IWorldGenerator {
+public class DeprecatedSandOreGenerator implements IWorldGenerator {
 	
 	private int genDim = 0;
 
@@ -64,21 +64,6 @@ public class SandOreGenerator implements IWorldGenerator {
 						if (random.nextInt(1) < 4) {
 							world.setBlock(PosX, PosY, PosZ + 1, ModBlocks.sandOre, 1, 0);
 						}*/
-					}
-				}
-			}
-		}
-		
-		//Diamond Generation
-		if (genDim == 0) {
-			for (int i = 0; i < count; i++) {
-				int PosX = chunk2X + random.nextInt(16);
-				int PosY = 55 + random.nextInt(10);
-				int PosZ = chunk2Z + random.nextInt(16);
-				
-				if (world.getBlock(PosX, PosY + 1, PosZ).getMaterial() == Material.water && (world.getBlock(PosX, PosY, PosZ) == Blocks.sand || world.getBlock(PosX, PosY, PosZ) == Blocks.dirt)) {
-					if (world.rand.nextInt(100) < diamondRarity) {
-						world.setBlock(PosX, PosY, PosZ, ModBlocks.sandOre, 1, 0);
 					}
 				}
 			}
