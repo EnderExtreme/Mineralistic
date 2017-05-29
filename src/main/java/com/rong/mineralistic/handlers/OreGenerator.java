@@ -31,25 +31,13 @@ public class OreGenerator implements IWorldGenerator {
 		generateOres(ModBlocks.gravelOre, 1, world, rand, x, z, 1, 6, 2, 4, 40, Blocks.stone);
 		generateOres(ModBlocks.gravelOre, 2, world, rand, x, z, 1, 6, 2, 4, 40, Blocks.stone);
 		generateOres(ModBlocks.gravelOre, 3, world, rand, x, z, 3, 7, 3, 10, 50, Blocks.stone);
-		generateOres(ModBlocks.gravelOre, 4, world, rand, x, z, 3, 7, 6, 35, 80, Blocks.stone);
-		generateOres(ModBlocks.gravelOre, 5, world, rand, x, z, 3, 7, 6, 0, 128, Blocks.stone);
+		generateOres(ModBlocks.gravelOre, 4, world, rand, x, z, 3, 7, 6, 45, 80, Blocks.stone);
+		generateOres(ModBlocks.gravelOre, 5, world, rand, x, z, 3, 7, 5, 0, 128, Blocks.stone);
 		generateOres(ModBlocks.gravelOre, 6, world, rand, x, z, 3, 7, 4, 20, 50, Blocks.stone);
 		generateOres(ModBlocks.gravelOre, 7, world, rand, x, z, 2, 4, 4, 10, 40, Blocks.stone);
 		generateOres(ModBlocks.gravelOre, 8, world, rand, x, z, 3, 7, 6, 0, 128, Blocks.stone);
 		generateOres(ModBlocks.gravelOre, 9, world, rand, x, z, 3, 7, 4, 20, 50, Blocks.stone);
 		generateOres(ModBlocks.gravelOre, 10, world, rand, x, z, 3, 7, 7, 40, 64, Blocks.stone);
-		
-		generateOres(ModBlocks.sandOre, 0, world, rand, x, z, 3, 7, 5, 40, 128, Blocks.sand);
-		generateOres(ModBlocks.sandOre, 1, world, rand, x, z, 1, 3, 5, 40, 128, Blocks.sand);
-		generateOres(ModBlocks.sandOre, 2, world, rand, x, z, 2, 4, 5, 40, 128, Blocks.sand);
-		generateOres(ModBlocks.sandOre, 3, world, rand, x, z, 3, 7, 5, 40, 128, Blocks.sand);
-		generateOres(ModBlocks.sandOre, 4, world, rand, x, z, 3, 7, 5, 40, 128, Blocks.sand);
-		generateOres(ModBlocks.sandOre, 5, world, rand, x, z, 4, 8, 5, 40, 128, Blocks.sand);
-		generateOres(ModBlocks.sandOre, 6, world, rand, x, z, 3, 7, 5, 40, 128, Blocks.sand);
-		generateOres(ModBlocks.sandOre, 7, world, rand, x, z, 3, 7, 5, 40, 128, Blocks.sand);
-		generateOres(ModBlocks.sandOre, 8, world, rand, x, z, 4, 7, 8, 40, 128, Blocks.sand);
-		generateOres(ModBlocks.sandOre, 9, world, rand, x, z, 3, 7, 5, 40, 128, Blocks.sand);
-		generateOres(ModBlocks.sandOre, 10, world, rand, x, z, 3, 7, 5, 40, 128, Blocks.sand);
 	}
 	
 	public void generateOres(Block block, int meta, World world, Random random, int chunkX, int chunkZ, int minVeinSize, int maxVeinSize, int chance, int minY, int maxY, Block blockToGenerateIn) {

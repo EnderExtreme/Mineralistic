@@ -12,8 +12,6 @@ tile.gravel_ore_silver.name=Silver Gravel
 tile.gravel_ore_tin.name=Cassiterite Gravel
 
 #Item Names
-
-
 item.nugget_copper.name=Copper Nugget
 item.nugget_diamond.name=Diamond Nugget
 item.nugget_emerald.name=Emerald Nugget
