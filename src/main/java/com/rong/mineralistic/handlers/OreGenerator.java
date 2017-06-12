@@ -26,7 +26,7 @@ public class OreGenerator implements IWorldGenerator {
 	}
 
 	public void generateOverworld(World world, Random rand, int x, int z) {
-		//Arguments: block, world, rand, x, z, minVein, maxVein, chance, minY, maxY, block to generate in
+		//Arguments: block, meta, 'world', 'rand', 'x', 'z', minVein, maxVein, chance, minY, maxY, blockToGenerateIn
 		generateOres(ModBlocks.gravelOre, 0, world, rand, x, z, 3, 7, 7, 40, 128, Blocks.stone);
 		generateOres(ModBlocks.gravelOre, 1, world, rand, x, z, 1, 6, 2, 4, 40, Blocks.stone);
 		generateOres(ModBlocks.gravelOre, 2, world, rand, x, z, 1, 6, 2, 4, 40, Blocks.stone);
