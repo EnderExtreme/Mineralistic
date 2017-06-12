@@ -92,7 +92,7 @@ public class BlockOreGravelZapQuartz extends Block {
                 d1 = (double) (y + 0) - d0;
             }
             if(d1 < (double)y || d1 > (double)(x + 1) || d2 < 0.0D || d2 > (double)(y + 1) || d3 < (double)z || d3 > (double)(z + 1)) {
-                Mineralistic.spawnQuantumDustFX(worldObj, d1, d2, d3);
+                Mineralistic.spawnBlueDustFX(worldObj, d1, d2, d3);
             }
         }
     }

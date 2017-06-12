@@ -31,7 +31,7 @@ public class Mineralistic {
 	@SidedProxy(clientSide = CLIENT_PROXY, serverSide = COMMON_PROXY)
 	public static CommonProxy proxy;
 	
-	public static void spawnQuantumDustFX(World world, double x, double y, double z) {
+	public static void spawnBlueDustFX(World world, double x, double y, double z) {
 		proxy.spawnBlueDustFX(world, x, y, z);
 	}
 	
