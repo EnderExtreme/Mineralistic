@@ -21,14 +21,15 @@ public class BlockOreStone1 extends Block {
 
 	public BlockOreStone1() {
 		super(Material.rock);
+		this.setBlockName("stone_ore");
+		this.setCreativeTab(CreativeTabs.tabBlock);
 		this.setHardness(4.0F);
 		this.setHarvestLevel("pickaxe", 3, 0);
 		this.setResistance(8.5F);
 	}
 	
 	static final String[] stoneOreTypes1 = new String[] {
-			"beryllium", "titanium", "molybdenum", "palladium", "neodymium", "uranium238", "naquadah", 
-			/*"enriched_naquadah"*/ "olivine", "quartzite", "lazurite", /*"sodalite"*/ "lignitecoal", "almandine", "calcite", ""
+			"beryllium", "titanium", "molybdenum", "palladium", "neodymium", "uranium238", "naquadah", "olivine", "lazurite", "almandine", "calcite"
 	};
 	
 	//Loops through all the blocks to register its texture
@@ -37,7 +38,7 @@ public class BlockOreStone1 extends Block {
 		textures = new IIcon[stoneOreTypes1.length];
 			
 		for(int i = 0; i < stoneOreTypes1.length; i++) {
-			textures[i] = iconReg.registerIcon(Mineralistic.MODID + ":" + ModBlocks.stoneOre1UnlocalizedName + "_" + stoneOreTypes1[i]);
+			textures[i] = iconReg.registerIcon(Mineralistic.MODID + ":" + ModBlocks.stoneOreUnlocalizedName + "_" + stoneOreTypes1[i]);
 		}
 	}
 		
@@ -53,7 +54,7 @@ public class BlockOreStone1 extends Block {
 	@SuppressWarnings("unchecked") 
 	public void getSubBlocks(Item item, CreativeTabs tab, List list) {
 		for (int i = 0; i < stoneOreTypes1.length; i++) {
-			list.add(new ItemStack(item, 1, i));
+			list.add(new ItemStack(item, 0, i));
 		}
 	}
 	

@@ -12,7 +12,7 @@ import net.minecraft.block.Block;
 public class ModBlocks {
 	
 	public static final String gravelOreUnlocalizedName = "gravel_ore";
-	public static final String stoneOre1UnlocalizedName = "stone_ore1";
+	public static final String stoneOreUnlocalizedName = "stone_ore";
 	
 	public static BlockOreGravel gravelOre;
 	public static BlockOreStone1 oreStone1;
@@ -24,7 +24,7 @@ public class ModBlocks {
 		oreZappy = new BlockOreGravelZapQuartz(true);
 		
         GameRegistry.registerBlock(gravelOre, ItemBlockOreGravel.class, gravelOreUnlocalizedName);
-        GameRegistry.registerBlock(oreStone1, ItemBlockOreStone1.class, stoneOre1UnlocalizedName);
+        GameRegistry.registerBlock(oreStone1, ItemBlockOreStone1.class, stoneOreUnlocalizedName);
         
         GameRegistry.registerBlock(oreZappy, gravelOreUnlocalizedName + "zapquartz");
     }

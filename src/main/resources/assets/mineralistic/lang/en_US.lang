@@ -1,5 +1,5 @@
 #Ore names
-tile.gravel_ore_copper.name=Tetrahedrite Gravel
+tile.gravel_ore_copper.name=Copper Gravel
 tile.gravel_ore_diamond.name=Precious Diamond Gravel
 tile.gravel_ore_emerald.name=Precious Emerald Gravel
 tile.gravel_ore_gold.name=Native Gold Gravel
@@ -9,14 +9,25 @@ tile.gravel_ore_lead.name=Lead Gravel
 tile.gravel_ore_nickel.name=Nickel Gravel
 tile.gravel_ore_redstone.name=Redstone Gravel
 tile.gravel_ore_silver.name=Silver Gravel
-tile.gravel_ore_tin.name=Cassiterite Gravel
+tile.gravel_ore_tin.name=Tin Gravel
+tile.gravel_ore_certusquartz.name=Certus Quartz Gravel
+tile.gravel_ore_quartzite.name=Quartzite Gravel
+tile.gravel_ore_zapquartz.name=Charged Certus Quartz Gravel
+tile.gravel_ore_lignitecoal.name=Lignite Coal Deposit
+tile.gravel_ore_lignitecoal.name=Precious Iridium Gravel
+
+tile.stone_ore_beryllium.name=Beryllium Ore
+tile.stone_ore_titanium.name=Titanium Ore
+tile.stone_ore_molybdenum.name=Molybdenum Ore
+tile.stone_ore_palladium.name=Palladium Ore
+tile.stone_ore_neodymium.name=Neodymium Ore
+tile.stone_ore_uranium238.name=Uranium 238 Ore
+tile.stone_ore_naquadah.name=Naquadah Deposit
+tile.stone_ore_olivine.name=Olivine Ore
+tile.stone_ore_lazurite.name=Lazurite Ore
+tile.stone_ore_almandine.name=Almandine Ore
+tile.stone_ore_calcite.name=Calcite
+
 
 #Item Names
-item.nugget_copper.name=Copper Nugget
-item.nugget_diamond.name=Diamond Nugget
-item.nugget_emerald.name=Emerald Nugget
-item.nugget_iron.name=Iron Nugget
-item.nugget_lead.name=Lead Nugget
-item.nugget_nickel.name=Nickel Nugget
-item.nugget_silver.name=Silver Nugget
-item.nugget_tin.name=Tin Nugget
+item.ingot_0.name=Lithium Ingot

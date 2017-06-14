@@ -44,16 +44,14 @@ public class BlockOreGravelZapQuartz extends Block {
 	}
 	
 	@Override
-    public int tickRate(World par1World)
-    {
+    public int tickRate(World worldObj) {
         return 30;
     }
 
 	
 	@SideOnly(Side.CLIENT)
 	public void randomDisplayTick(World worldObj, int x, int y, int z, Random random) {
-		if(isGlowing)
-        {
+		if(isGlowing) {
             this.sparkle(worldObj, x, y, z);
         }
 	}

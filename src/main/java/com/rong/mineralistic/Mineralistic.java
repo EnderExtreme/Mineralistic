@@ -6,6 +6,7 @@ import net.minecraft.world.World;
 import com.rong.mineralistic.handlers.OreDictHandler;
 import com.rong.mineralistic.handlers.OreGenerator;
 import com.rong.mineralistic.init.ModBlocks;
+import com.rong.mineralistic.init.ModItems;
 //import com.rong.mineralistic.init.ModItems;
 import com.rong.mineralistic.proxies.CommonProxy;
 
@@ -39,7 +40,7 @@ public class Mineralistic {
 	private void preInit(FMLPreInitializationEvent preInitEvent) {
 		
 		ModBlocks.init();
-		//ModItems.init();
+		ModItems.init();
 	}
 	
 	@EventHandler

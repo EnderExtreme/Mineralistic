@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 public class ItemBlockOreGravel extends ItemBlock {
 	
 	static final String[] gravelOreTypes = new String[] {
-			"copper", "diamond", "emerald", "gold", "iron", "lapis", "lead", "nickel", "redstone", "silver", "tin" 
+			"copper", "diamond", "emerald", "gold", "iron", "lapis", "lead", "nickel", "redstone", "silver", "tin", "iridium", "certusquartz", "quartzite", "lignitecoal"
 		};
 
 	public ItemBlockOreGravel(Block blockItems) {

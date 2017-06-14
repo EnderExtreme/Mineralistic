@@ -7,9 +7,8 @@ import net.minecraft.item.ItemStack;
 public class ItemBlockOreStone1 extends ItemBlock {
 	
 	static final String[] stoneOreTypes1 = new String[] {
-			"beryllium", "titanium", "molybdenum", "palladium", "neodymium", "iridium", "uranium238", "naquadah", 
-			/*"enriched_naquadah"*/ "olivine", "quartzite", "lazurite", /*"sodalite"*/ "lignite_coal", "almandine", "calcite", ""
-		};
+			"beryllium", "titanium", "molybdenum", "palladium", "neodymium", "uranium238", "naquadah", "olivine", "lazurite", "almandine", "calcite"
+	};
 
 	public ItemBlockOreStone1(Block blockItems) {
 		super(blockItems);
