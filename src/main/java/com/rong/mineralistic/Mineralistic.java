@@ -7,6 +7,7 @@ import com.rong.mineralistic.handlers.OreDictHandler;
 import com.rong.mineralistic.handlers.OreGenerator;
 import com.rong.mineralistic.init.ModBlocks;
 import com.rong.mineralistic.init.ModItems;
+import com.rong.mineralistic.modcompat.TiCGregHandler;
 //import com.rong.mineralistic.init.ModItems;
 import com.rong.mineralistic.proxies.CommonProxy;
 
@@ -19,7 +20,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-@Mod(modid = Mineralistic.MODID, name = Mineralistic.NAME, version = Mineralistic.VERSION, acceptedMinecraftVersions = "[1.7.10]")
+@Mod(modid = Mineralistic.MODID, name = Mineralistic.NAME, version = Mineralistic.VERSION, acceptedMinecraftVersions = "[1.7.10]", dependencies="after:*")
 
 public class Mineralistic {
 	
@@ -41,6 +42,7 @@ public class Mineralistic {
 		
 		ModBlocks.init();
 		ModItems.init();
+		TiCGregHandler.TiCIMC();
 	}
 	
 	@EventHandler

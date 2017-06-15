@@ -1,6 +1,7 @@
 package com.rong.mineralistic.handlers;
 
 import com.rong.mineralistic.init.ModBlocks;
+import com.rong.mineralistic.init.ModItems;
 
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
@@ -24,6 +25,9 @@ public class OreDictHandler {
 		OreDictionary.registerOre("oreSilver", new ItemStack(ModBlocks.gravelOre, 0, 9));
 		//OreDictionary.registerOre("oreCassiterite", new ItemStack(ModBlocks.gravelOre, 0, 10));
 		OreDictionary.registerOre("oreTin", new ItemStack(ModBlocks.gravelOre, 0, 10));
+		
+		OreDictionary.registerOre("ingotLithium", new ItemStack(ModItems.itemIngots, 0, 0));
+		OreDictionary.registerOre("plateLithium", new ItemStack(ModItems.itemIngots, 0, 1));
 		
 		
 	
