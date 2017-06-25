@@ -6,9 +6,6 @@ import net.minecraft.world.World;
 import com.rong.mineralistic.handlers.OreDictHandler;
 import com.rong.mineralistic.handlers.OreGenerator;
 import com.rong.mineralistic.init.ModBlocks;
-import com.rong.mineralistic.init.ModItems;
-import com.rong.mineralistic.modcompat.TiCGregHandler;
-//import com.rong.mineralistic.init.ModItems;
 import com.rong.mineralistic.proxies.CommonProxy;
 
 import cpw.mods.fml.common.Mod;
@@ -28,7 +25,7 @@ public class Mineralistic {
 	public static final String COMMON_PROXY = "com.rong.mineralistic.proxies.CommonProxy";
 	public static final String MODID = "mineralistic";
 	public static final String NAME = "Mineralistic";
-	public static final String VERSION = "1.3";
+	public static final String VERSION = "1.7";
 
 	@SidedProxy(clientSide = CLIENT_PROXY, serverSide = COMMON_PROXY)
 	public static CommonProxy proxy;
@@ -41,8 +38,7 @@ public class Mineralistic {
 	private void preInit(FMLPreInitializationEvent preInitEvent) {
 		
 		ModBlocks.init();
-		ModItems.init();
-		TiCGregHandler.TiCIMC();
+		//TiCGregHandler.TiCIMC();
 	}
 	
 	@EventHandler
