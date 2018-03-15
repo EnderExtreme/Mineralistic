@@ -4,23 +4,23 @@ import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 
-public class ItemBlockMaterials extends ItemBlock {
+public class ItemBlockOreGravel2 extends ItemBlock {
 	
-	static final String[] blockTypes = new String[] {
-			"saltpeter", "sulfur"
+	static final String[] gravelOreTypes = new String[] {
+			"bauxite", "chromite", "calcite", "aluminium", "lazurite", "lepidolite", "naquadah", "titanium"
 		};
 
-	public ItemBlockMaterials(Block blockItems) {
+	public ItemBlockOreGravel2(Block blockItems) {
 		super(blockItems);
 		this.setHasSubtypes(true);
 	}
 	
 	public String getUnlocalizedName(ItemStack itemstack) {
 		int i = itemstack.getItemDamage();
-		if (i < 0 || i >= blockTypes.length) {
+		if (i < 0 || i >= gravelOreTypes.length) {
 			i = 0;
 		}
-		return super.getUnlocalizedName() + "_" + blockTypes[i];
+		return super.getUnlocalizedName() + "_" + gravelOreTypes[i];
 	}
 	
 	public int getMetadata(int meta) {

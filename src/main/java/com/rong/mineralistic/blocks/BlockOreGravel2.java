@@ -19,24 +19,33 @@ import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockMaterials extends Block {
+public class BlockOreGravel2 extends Block {
 	
 	private IIcon[] textures;
 
 	//Constructor
-	public BlockMaterials() {
-		super(Material.iron);
-		this.setBlockName("block");
+	public BlockOreGravel2() {
+		super(Material.craftedSnow);
+		this.setBlockName("gravel_ore2");
 		this.setCreativeTab(CreativeTabs.tabBlock);
 		this.setHardness(3.0F);
 		this.setResistance(5.0F);
-		this.setStepSound(soundTypeMetal);
+		this.setStepSound(soundTypeGravel);
 		
-		setHarvestProperties("pickaxe", 0, 0);
+		setHarvestProperties("shovel", 2, 0);
+		setHarvestProperties("shovel", 3, 1);
+		setHarvestProperties("shovel", 2, 2);
+		setHarvestProperties("shovel", 2, 3);
+		setHarvestProperties("shovel", 1, 4);
+		setHarvestProperties("shovel", 1, 5);
+		setHarvestProperties("shovel", 3, 6);
+		setHarvestProperties("shovel", 3, 7);
+		
+			
 	}
 	
-	static final String[] blockTypes = new String[] {
-		"saltpeter", "sulfur"
+	static final String[] gravelOreTypes = new String[] {
+		"bauxite", "chromite", "calcite", "aluminium", "lazurite", "lepidolite", "naquadah", "titanium"
 	};
 	
 	
@@ -44,15 +53,15 @@ public class BlockMaterials extends Block {
 	//Loops through all the blocks to register its texture
 	@Override
     public void registerBlockIcons(IIconRegister iconReg) { 
-		textures = new IIcon[blockTypes.length];
+		textures = new IIcon[gravelOreTypes.length];
 		
-		for(int i = 0; i < blockTypes.length; i++) {
-			textures[i] = iconReg.registerIcon(Mineralistic.MODID + ":" + ModBlocks.blockUnlocalizedName + "_" + blockTypes[i]);
+		for(int i = 0; i < gravelOreTypes.length; i++) {
+			textures[i] = iconReg.registerIcon(Mineralistic.MODID + ":" + ModBlocks.gravelOre2UnlocalizedName + "_" + gravelOreTypes[i]);
 		}
 	}
 	
 	public IIcon getIcon(int side, int meta) {
-		if (meta > 0 && meta < blockTypes.length) {
+		if (meta > 0 && meta < gravelOreTypes.length) {
 		}
 		return textures[meta];
 	}
@@ -62,7 +71,7 @@ public class BlockMaterials extends Block {
     @SideOnly(Side.CLIENT) 
     @SuppressWarnings("unchecked") 
 	public void getSubBlocks(Item item, CreativeTabs tab, List list) {
-	    for (int i = 0; i < blockTypes.length; i++) {
+	    for (int i = 0; i < gravelOreTypes.length; i++) {
 	        list.add(new ItemStack(item, 0, i));
 	    }
 	}
@@ -72,7 +81,7 @@ public class BlockMaterials extends Block {
 	    return meta;
 	}
 	
-	public BlockMaterials setHarvestProperties(String toolType, int level, int metadata){
+	public BlockOreGravel2 setHarvestProperties(String toolType, int level, int metadata){
 		super.setHarvestLevel(toolType, level, metadata);
 		return this;
 	}

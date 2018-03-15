@@ -1,5 +1,6 @@
 package com.rong.mineralistic.proxies;
 
+import com.rong.mineralistic.effects.EntityParticleBlackDustFX;
 import com.rong.mineralistic.effects.EntityParticleBlueDustFX;
 
 import net.minecraft.client.Minecraft;
@@ -17,6 +18,18 @@ public class ClientProxy extends CommonProxy {
 	    
 	    if(dx*dx + dy*dy + dz*dz < 16.0 * 16.0) {
 	            EntityFX fx = new EntityParticleBlueDustFX( world, x, y, z, 1.0f );
+	            Minecraft.getMinecraft().effectRenderer.addEffect( fx );
+	        }
+	    }
+	
+	@Override
+	public void spawnBlackDustFX(World world, double x, double y, double z) {
+	    double dx = Minecraft.getMinecraft().renderViewEntity.posX - x;
+	    double dy = Minecraft.getMinecraft().renderViewEntity.posY - y;
+	    double dz = Minecraft.getMinecraft().renderViewEntity.posZ - z;
+	    
+	    if(dx*dx + dy*dy + dz*dz < 16.0 * 16.0) {
+	            EntityFX fx = new EntityParticleBlackDustFX( world, x, y, z, 1.0f );
 	            Minecraft.getMinecraft().effectRenderer.addEffect( fx );
 	        }
 	    }

@@ -28,6 +28,9 @@ public class OreDictHandler {
 		OreDictionary.registerOre("oreCertusQuartz", new ItemStack(ModBlocks.gravelOre, 0, 12));
 		OreDictionary.registerOre("oreQuartzite", new ItemStack(ModBlocks.gravelOre, 0, 13));
 		OreDictionary.registerOre("oreLigniteCoal", new ItemStack(ModBlocks.gravelOre, 0, 14));
+		
+		OreDictionary.registerOre("oreChargedCertusQuartz", new ItemStack(ModBlocks.oreZappy));
+		OreDictionary.registerOre("oreEnrichedNaquadah", new ItemStack(ModBlocks.oreENaquadah));
 
 		
 		

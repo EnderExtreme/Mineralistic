@@ -13,21 +13,16 @@ tile.gravel_ore_tin.name=Tin Gravel
 tile.gravel_ore_certusquartz.name=Certus Quartz Gravel
 tile.gravel_ore_quartzite.name=Quartzite Gravel
 tile.gravel_ore_zapquartz.name=Charged Certus Quartz Gravel
-tile.gravel_ore_lignitecoal.name=Lignite Coal Deposit
-tile.gravel_ore_lignitecoal.name=Precious Iridium Gravel
+tile.gravel_ore_iridium.name=Precious Iridium Gravel
+tile.gravel_ore_ilmenite.name=Ilmenite Gravel
 
-tile.stone_ore_beryllium.name=Beryllium Ore
-tile.stone_ore_titanium.name=Titanium Ore
-tile.stone_ore_molybdenum.name=Molybdenum Ore
-tile.stone_ore_palladium.name=Palladium Ore
-tile.stone_ore_neodymium.name=Neodymium Ore
-tile.stone_ore_uranium238.name=Uranium 238 Ore
-tile.stone_ore_naquadah.name=Naquadah Deposit
-tile.stone_ore_olivine.name=Olivine Ore
-tile.stone_ore_lazurite.name=Lazurite Ore
-tile.stone_ore_almandine.name=Almandine Ore
-tile.stone_ore_calcite.name=Calcite
+tile.gravel_ore_enrichednaquadah.name=Enriched Naquadah Gravel
 
-
-#Item Names
-item.ingot_0.name=Lithium Ingot
+tile.gravel_ore2_bauxite.name=Bauxite Gravel
+tile.gravel_ore2_chromite.name=Chromite Gravel
+tile.gravel_ore2_calcite.name=Calcite Gravel
+tile.gravel_ore2_aluminium.name=Aluminium Gravel
+tile.gravel_ore2_lazurite.name=Lazurite Gravel
+tile.gravel_ore2_lepidolite.name=Lepidolite Gravel
+tile.gravel_ore2_naquadah.name=Naquadah Gravel
+tile.gravel_ore2_titanium.name=Titanium Gravel

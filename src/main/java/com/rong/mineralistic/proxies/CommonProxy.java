@@ -11,4 +11,9 @@ public class CommonProxy {
 	
 	public void spawnBlueDustFX(World world, double x, double y, double z) {
 	}
+
+	public void spawnBlackDustFX(World world, double x, double y, double z) {
+		// TODO Auto-generated method stub
+		
+	}
 }

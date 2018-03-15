@@ -32,7 +32,6 @@ public class BlockOreGravel extends Block {
 		this.setResistance(5.0F);
 		this.setStepSound(soundTypeGravel);
 		
-		setHarvestProperties("shovel", 0, 14);
 		
 		setHarvestProperties("shovel", 1, 0);
 	    setHarvestProperties("shovel", 1, 4);
@@ -54,7 +53,7 @@ public class BlockOreGravel extends Block {
 	
 	//For metadata, may need a BlockOreGravel2
 	static final String[] gravelOreTypes = new String[] {
-		"copper", "diamond", "emerald", "gold", "iron", "lapis", "lead", "nickel", "redstone", "silver", "tin", "iridium", "certusquartz", "quartzite", "lignitecoal"
+		"copper", "diamond", "emerald", "gold", "iron", "lapis", "lead", "nickel", "redstone", "silver", "tin", "iridium", "certusquartz", "quartzite", "ilmenite"
 	};
 	
 	

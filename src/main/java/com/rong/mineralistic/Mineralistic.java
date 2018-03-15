@@ -25,7 +25,7 @@ public class Mineralistic {
 	public static final String COMMON_PROXY = "com.rong.mineralistic.proxies.CommonProxy";
 	public static final String MODID = "mineralistic";
 	public static final String NAME = "Mineralistic";
-	public static final String VERSION = "1.7";
+	public static final String VERSION = "1.9";
 
 	@SidedProxy(clientSide = CLIENT_PROXY, serverSide = COMMON_PROXY)
 	public static CommonProxy proxy;
@@ -34,11 +34,15 @@ public class Mineralistic {
 		proxy.spawnBlueDustFX(world, x, y, z);
 	}
 	
+	public static void spawnBlackDustFX(World world, double x, double y, double z) {
+		proxy.spawnBlackDustFX(world, x, y, z);
+	}
+	
+	
 	@EventHandler
 	private void preInit(FMLPreInitializationEvent preInitEvent) {
 		
 		ModBlocks.init();
-		//TiCGregHandler.TiCIMC();
 	}
 	
 	@EventHandler
