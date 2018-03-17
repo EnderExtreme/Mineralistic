@@ -4,7 +4,6 @@ import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 
 import com.rong.mineralistic.handlers.OreDictHandler;
-import com.rong.mineralistic.handlers.OreGenerator;
 import com.rong.mineralistic.init.ModBlocks;
 import com.rong.mineralistic.proxies.CommonProxy;
 
@@ -49,7 +48,6 @@ public class Mineralistic {
 	private void init(FMLInitializationEvent initEvent) {
 		
 		OreDictHandler.init();
-		GameRegistry.registerWorldGenerator(new OreGenerator(), 0);
 
 	}
 	

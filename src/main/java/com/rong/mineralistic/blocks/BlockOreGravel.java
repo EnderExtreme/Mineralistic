@@ -8,7 +8,7 @@ import com.rong.mineralistic.init.ModBlocks;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
+import net.minecraft.block.BlockFalling;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
@@ -19,7 +19,7 @@ import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockOreGravel extends Block {
+public class BlockOreGravel extends BlockFalling {
 	
 	private IIcon[] textures;
 
@@ -28,7 +28,7 @@ public class BlockOreGravel extends Block {
 		super(Material.craftedSnow);
 		this.setBlockName("gravel_ore");
 		this.setCreativeTab(CreativeTabs.tabBlock);
-		this.setHardness(3.0F);
+		this.setHardness(5.0F);
 		this.setResistance(5.0F);
 		this.setStepSound(soundTypeGravel);
 		
@@ -48,7 +48,7 @@ public class BlockOreGravel extends Block {
 		setHarvestProperties("shovel", 2, 12);
 		setHarvestProperties("shovel", 2, 14);
 		
-		setHarvestProperties("shovel", 3, 11);	
+		setHarvestProperties("shovel", 3, 11);
 	}
 	
 	//For metadata, may need a BlockOreGravel2
@@ -93,6 +93,7 @@ public class BlockOreGravel extends Block {
 		super.setHarvestLevel(toolType, level, metadata);
 		return this;
 	}
+
 
 }
 

@@ -27,10 +27,20 @@ public class OreDictHandler {
 		OreDictionary.registerOre("oreIridium", new ItemStack(ModBlocks.gravelOre, 0, 11));
 		OreDictionary.registerOre("oreCertusQuartz", new ItemStack(ModBlocks.gravelOre, 0, 12));
 		OreDictionary.registerOre("oreQuartzite", new ItemStack(ModBlocks.gravelOre, 0, 13));
-		OreDictionary.registerOre("oreLigniteCoal", new ItemStack(ModBlocks.gravelOre, 0, 14));
+		OreDictionary.registerOre("oreIlmenite", new ItemStack(ModBlocks.gravelOre, 0, 14));
 		
-		OreDictionary.registerOre("oreChargedCertusQuartz", new ItemStack(ModBlocks.oreZappy));
-		OreDictionary.registerOre("oreEnrichedNaquadah", new ItemStack(ModBlocks.oreENaquadah));
+		OreDictionary.registerOre("oreBauxite", new ItemStack(ModBlocks.gravelOre2, 0, 0));
+		OreDictionary.registerOre("oreChromite", new ItemStack(ModBlocks.gravelOre2, 0, 1));
+		OreDictionary.registerOre("oreCalcite", new ItemStack(ModBlocks.gravelOre2, 0, 2));
+		OreDictionary.registerOre("oreAluminium", new ItemStack(ModBlocks.gravelOre2, 0, 3));
+		OreDictionary.registerOre("oreAluminum", new ItemStack(ModBlocks.gravelOre2, 0, 3));
+		OreDictionary.registerOre("oreLazurite", new ItemStack(ModBlocks.gravelOre2, 0, 4));
+		OreDictionary.registerOre("oreLepidolite", new ItemStack(ModBlocks.gravelOre2, 0, 5));
+		OreDictionary.registerOre("oreNaquadah", new ItemStack(ModBlocks.gravelOre2, 0, 6));
+		OreDictionary.registerOre("oreTitanium", new ItemStack(ModBlocks.gravelOre2, 0, 7));
+		
+		OreDictionary.registerOre("oreCertusQuartzCharged", new ItemStack(ModBlocks.oreZappy));
+		OreDictionary.registerOre("oreNaquadahEnriched", new ItemStack(ModBlocks.oreENaquadah));
 
 		
 		

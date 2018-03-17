@@ -8,7 +8,7 @@ import com.rong.mineralistic.init.ModBlocks;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
+import net.minecraft.block.BlockFalling;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
@@ -19,16 +19,16 @@ import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockOreGravel2 extends Block {
+public class BlockOreGravel2 extends BlockFalling {
 	
 	private IIcon[] textures;
 
 	//Constructor
 	public BlockOreGravel2() {
-		super(Material.craftedSnow);
+		//super(Material.craftedSnow);
 		this.setBlockName("gravel_ore2");
 		this.setCreativeTab(CreativeTabs.tabBlock);
-		this.setHardness(3.0F);
+		this.setHardness(5.0F);
 		this.setResistance(5.0F);
 		this.setStepSound(soundTypeGravel);
 		

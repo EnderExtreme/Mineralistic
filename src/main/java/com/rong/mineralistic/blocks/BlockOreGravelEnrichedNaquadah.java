@@ -8,13 +8,13 @@ import com.rong.mineralistic.proxies.ClientProxy;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
+import net.minecraft.block.BlockFalling;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.world.World;
 
-public class BlockOreGravelEnrichedNaquadah extends Block {
+public class BlockOreGravelEnrichedNaquadah extends BlockFalling {
 	
 	private Boolean isGlowing;
 
@@ -22,7 +22,7 @@ public class BlockOreGravelEnrichedNaquadah extends Block {
 		super(Material.craftedSnow);
 		this.setBlockName("gravel_ore_enrichednaquadah");
 		this.setCreativeTab(CreativeTabs.tabBlock);
-		this.setHardness(3.0F);
+		this.setHardness(5.0F);
 		this.setResistance(5.0F);
 		this.setStepSound(soundTypeGravel);
 		this.setBlockTextureName(Mineralistic.MODID + ":" + ModBlocks.gravelOre2UnlocalizedName + "_" + "naquadah");
