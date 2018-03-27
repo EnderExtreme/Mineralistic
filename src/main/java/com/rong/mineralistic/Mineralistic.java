@@ -4,7 +4,9 @@ import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 
 import com.rong.mineralistic.handlers.OreDictHandler;
+import com.rong.mineralistic.handlers.RecipeHandler;
 import com.rong.mineralistic.init.ModBlocks;
+import com.rong.mineralistic.init.ModItems;
 import com.rong.mineralistic.proxies.CommonProxy;
 
 import cpw.mods.fml.common.Mod;
@@ -42,12 +44,16 @@ public class Mineralistic {
 	private void preInit(FMLPreInitializationEvent preInitEvent) {
 		
 		ModBlocks.init();
+		ModItems.init();
 	}
 	
 	@EventHandler
 	private void init(FMLInitializationEvent initEvent) {
 		
 		OreDictHandler.init();
+		RecipeHandler.init();
+		Blocks.gravel.setHarvestLevel("shovel", 1);
+		Blocks.clay.setHarvestLevel("shovel", 1);
 
 	}
 	

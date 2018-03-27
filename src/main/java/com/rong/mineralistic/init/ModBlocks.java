@@ -22,6 +22,7 @@ public class ModBlocks {
 	public static BlockOreGravel2 gravelOre2;
 	
 	public static final void init() {
+		
 		gravelOre = new BlockOreGravel();
 		gravelOre2 = new BlockOreGravel2();
 		oreZappy = new BlockOreGravelZapQuartz(true);
