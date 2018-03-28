@@ -17,6 +17,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = Mineralistic.MODID, name = Mineralistic.NAME, version = Mineralistic.VERSION, acceptedMinecraftVersions = "[1.7.10]", dependencies="after:*")
 
@@ -45,6 +46,10 @@ public class Mineralistic {
 		
 		ModBlocks.init();
 		ModItems.init();
+		CommonProxy.init();
+		
+		LanguageRegistry.instance().addStringLocalization("death.attack.dmgBreakBlockWithHand","%1$s was splintered into pieces");
+		//LanguageRegistry.instance().addStringLocalization("death.attack.dmgBreakBlockWithHand","%1$s said Woodbye to the world");
 	}
 	
 	@EventHandler
@@ -52,8 +57,6 @@ public class Mineralistic {
 		
 		OreDictHandler.init();
 		RecipeHandler.init();
-		Blocks.gravel.setHarvestLevel("shovel", 1);
-		Blocks.clay.setHarvestLevel("shovel", 1);
 
 	}
 	

@@ -1,6 +1,8 @@
 package com.rong.mineralistic.init;
 
 import com.rong.mineralistic.items.ItemGravelFilter;
+import com.rong.mineralistic.items.ItemTFActivator;
+import com.rong.mineralistic.items.ItemWoodMesh;
 import com.rong.mineralistic.items.tools.ItemFlintAxe;
 import com.rong.mineralistic.items.tools.ItemFlintHoe;
 import com.rong.mineralistic.items.tools.ItemFlintPickaxe;
@@ -20,6 +22,8 @@ public class ModItems {
 	public static Item flintHoe;
 	public static Item flintSword;
 	public static Item gravelFilter;
+	public static Item woodMesh;
+	public static Item activator;
 	
 	public static final String flint = "flint";
 
@@ -34,6 +38,9 @@ public class ModItems {
 		flintSword = new ItemFlintSword(flintMaterial).setUnlocalizedName(flint + "_" + "sword").setTextureName(flint + "_" + "sword");
 		
 		gravelFilter = new ItemGravelFilter().setUnlocalizedName("gravel_filter").setTextureName("gravel_filter");
+		woodMesh = new ItemWoodMesh().setUnlocalizedName("wood_mesh").setTextureName("wood_mesh");
+		
+		activator = new ItemTFActivator().setUnlocalizedName("tf_activator").setTextureName("tf_activator");
 		
 		GameRegistry.registerItem(flintPickaxe, flintPickaxe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(flintAxe, flintAxe.getUnlocalizedName().substring(5));
@@ -42,6 +49,8 @@ public class ModItems {
 		GameRegistry.registerItem(flintSword, flintSword.getUnlocalizedName().substring(5));
 		
 		GameRegistry.registerItem(gravelFilter, gravelFilter.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(woodMesh, woodMesh.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(activator, activator.getUnlocalizedName().substring(5));
 		
 	}
 }
