@@ -1,18 +1,15 @@
 package com.rong.mineralistic.blocks;
 
-import java.util.Random;
-
 import com.rong.mineralistic.Mineralistic;
 import com.rong.mineralistic.init.ModBlocks;
-import com.rong.mineralistic.proxies.ClientProxy;
-
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockFalling;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.Entity;
 import net.minecraft.world.World;
+
+import java.util.Random;
 
 public class BlockOreGravelEnrichedNaquadah extends BlockFalling {
 	
@@ -57,42 +54,6 @@ public class BlockOreGravelEnrichedNaquadah extends BlockFalling {
 	}
 	
 	private void sparkle(World worldObj, int x, int y, int z) {
-        if(!worldObj.isRemote) {
-            return;
-        }
-
-        Random random = worldObj.rand;
-        double d0 = 0.0625D;
-
-        for(int l = 0; l < 6; ++l)
-        {
-            double d1 = (double)((float)x + random.nextFloat());
-            double d2 = (double)((float)y + random.nextFloat());
-            double d3 = (double)((float)z + random.nextFloat());
-
-            if(l == 0 && !worldObj.getBlock(x, y + 1, z).isOpaqueCube()) {
-                d2 = (double)(y + 1) + d0;
-            }
-            if(l == 1 && !worldObj.getBlock(x, y - 1, z).isOpaqueCube()) {           
-                d2 = (double)(y + 0) - d0;
-            }
-            if(l == 2 && !worldObj.getBlock(x, y, z + 1).isOpaqueCube()) {
-                d3 = (double) (z + 1) + d0;
-            }
-            if(l == 3 && !worldObj.getBlock(x, y, z - 1).isOpaqueCube()) {
-                d3 = (double) (z + 0) - d0;
-            }
-            if(l == 4 && !worldObj.getBlock(x + 1, y, z).isOpaqueCube()) {
-                d1 = (double) (y + 1) + d0;
-            }
-
-            if(l == 5 && !worldObj.getBlock(x - 1, y, z).isOpaqueCube()) {
-                d1 = (double) (y + 0) - d0;
-            }
-            if(d1 < (double)y || d1 > (double)(x + 1) || d2 < 0.0D || d2 > (double)(y + 1) || d3 < (double)z || d3 > (double)(z + 1)) {
-                Mineralistic.spawnBlackDustFX(worldObj, d1, d2, d3);
-            }
-        }
     }
 	
 	

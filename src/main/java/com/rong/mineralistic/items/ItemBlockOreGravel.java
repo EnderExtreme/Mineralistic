@@ -5,7 +5,9 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 
 public class ItemBlockOreGravel extends ItemBlock {
-	
+
+
+
 	static final String[] gravelOreTypes = new String[] {
 			"copper", "diamond", "emerald", "gold", "iron", "lapis", "lead", "nickel", "redstone", "silver", "tin", "iridium", "certusquartz", "quartzite", "ilmenite"
 		};
@@ -16,6 +18,8 @@ public class ItemBlockOreGravel extends ItemBlock {
 	}
 	
 	public String getUnlocalizedName(ItemStack itemstack) {
+
+
 		int i = itemstack.getItemDamage();
 		if (i < 0 || i >= gravelOreTypes.length) {
 			i = 0;
@@ -26,5 +30,4 @@ public class ItemBlockOreGravel extends ItemBlock {
 	public int getMetadata(int meta) {
 		return meta;
 	}
-
 }

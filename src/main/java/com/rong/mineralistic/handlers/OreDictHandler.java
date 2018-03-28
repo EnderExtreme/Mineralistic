@@ -1,10 +1,5 @@
 package com.rong.mineralistic.handlers;
 
-import com.rong.mineralistic.init.ModBlocks;
-
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.OreDictionary;
-
 public class OreDictHandler {
 	
 	//"copper", "diamond", "emerald", "gold", "iron", "lapis", "lead", "nickel", "redstone", "silver", "tin"
@@ -12,7 +7,7 @@ public class OreDictHandler {
 	public static void init() {
 		
 		//OreDictionary.registerOre("oreTetrahedrite", new ItemStack(ModBlocks.gravelOre, 0, 0));
-		OreDictionary.registerOre("oreCopper", new ItemStack(ModBlocks.gravelOre, 0, 0));
+		/*OreDictionary.registerOre("oreCopper", new ItemStack(ModBlocks.gravelOre, 0, 0));
 		OreDictionary.registerOre("oreDiamond", new ItemStack(ModBlocks.gravelOre, 0, 1));
 		OreDictionary.registerOre("oreEmerald", new ItemStack(ModBlocks.gravelOre, 0, 2));
 		OreDictionary.registerOre("oreGold", new ItemStack(ModBlocks.gravelOre, 0, 3));
@@ -37,10 +32,10 @@ public class OreDictHandler {
 		OreDictionary.registerOre("oreLazurite", new ItemStack(ModBlocks.gravelOre2, 0, 4));
 		OreDictionary.registerOre("oreLepidolite", new ItemStack(ModBlocks.gravelOre2, 0, 5));
 		OreDictionary.registerOre("oreNaquadah", new ItemStack(ModBlocks.gravelOre2, 0, 6));
-		OreDictionary.registerOre("oreTitanium", new ItemStack(ModBlocks.gravelOre2, 0, 7));
+		OreDictionary.registerOre("oreTitanium", new ItemStack(ModBlocks.gravelOre2, 0, 7));*/
 		
-		OreDictionary.registerOre("oreCertusQuartzCharged", new ItemStack(ModBlocks.oreZappy));
-		OreDictionary.registerOre("oreNaquadahEnriched", new ItemStack(ModBlocks.oreENaquadah));
+		/*OreDictionary.registerOre("oreCertusQuartzCharged", new ItemStack(ModBlocks.oreZappy));
+		OreDictionary.registerOre("oreNaquadahEnriched", new ItemStack(ModBlocks.oreENaquadah));*/
 
 		
 		

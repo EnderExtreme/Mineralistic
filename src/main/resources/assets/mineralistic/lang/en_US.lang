@@ -1,31 +1,29 @@
 #Ore names
-tile.gravel_ore_copper.name=Copper Gravel
-tile.gravel_ore_diamond.name=Precious Diamond Gravel
-tile.gravel_ore_emerald.name=Precious Emerald Gravel
-tile.gravel_ore_gold.name=Native Gold Gravel
-tile.gravel_ore_iron.name=Iron Gravel
-tile.gravel_ore_lapis.name=Lapis Gravel
-tile.gravel_ore_lead.name=Lead Gravel
-tile.gravel_ore_nickel.name=Nickel Gravel
-tile.gravel_ore_redstone.name=Redstone Gravel
-tile.gravel_ore_silver.name=Silver Gravel
-tile.gravel_ore_tin.name=Tin Gravel
-tile.gravel_ore_certusquartz.name=Certus Quartz Gravel
-tile.gravel_ore_quartzite.name=Quartzite Gravel
-tile.gravel_ore_zapquartz.name=Charged Certus Quartz Gravel
-tile.gravel_ore_iridium.name=Precious Iridium Gravel
-tile.gravel_ore_ilmenite.name=Ilmenite Gravel
-
-tile.gravel_ore_enrichednaquadah.name=Enriched Naquadah Gravel
-
-tile.gravel_ore2_bauxite.name=Bauxite Gravel
-tile.gravel_ore2_chromite.name=Chromite Gravel
-tile.gravel_ore2_calcite.name=Calcite Gravel
-tile.gravel_ore2_aluminium.name=Aluminium Gravel
-tile.gravel_ore2_lazurite.name=Lazurite Gravel
-tile.gravel_ore2_lepidolite.name=Lepidolite Gravel
-tile.gravel_ore2_naquadah.name=Naquadah Gravel
-tile.gravel_ore2_titanium.name=Titanium Gravel
+tile.gravel_ore.copper.name=Copper Gravel
+tile.gravel_ore.diamond.name=Precious Diamond Gravel
+tile.gravel_ore.emerald.name=Precious Emerald Gravel
+tile.gravel_ore.gold.name=Native Gold Gravel
+tile.gravel_ore.iron.name=Iron Gravel
+tile.gravel_ore.lapis.name=Lapis Gravel
+tile.gravel_ore.lead.name=Lead Gravel
+tile.gravel_ore.nickel.name=Nickel Gravel
+tile.gravel_ore.redstone.name=Redstone Gravel
+tile.gravel_ore.silver.name=Silver Gravel
+tile.gravel_ore.tin.name=Tin Gravel
+tile.gravel_ore.certus_quartz.name=Certus Quartz Gravel
+tile.gravel_ore.quartzite.name=Quartzite Gravel
+tile.gravel_ore.charged_certus_quartz.name=Charged Certus Quartz Gravel
+tile.gravel_ore.iridium.name=Precious Iridium Gravel
+tile.gravel_ore.ilmenite.name=Ilmenite Gravel
+tile.gravel_ore.enriched_naquadah.name=Enriched Naquadah Gravel
+tile.gravel_ore.bauxite.name=Bauxite Gravel
+tile.gravel_ore.chromite.name=Chromite Gravel
+tile.gravel_ore.calcite.name=Calcite Gravel
+tile.gravel_ore.aluminium.name=Aluminium Gravel
+tile.gravel_ore.lazurite.name=Lazurite Gravel
+tile.gravel_ore.lepidolite.name=Lepidolite Gravel
+tile.gravel_ore.naquadah.name=Naquadah Gravel
+tile.gravel_ore.titanium.name=Titanium Gravel
 
 item.flint_pickaxe.name=Flint Pickaxe
 item.flint_axe.name=Flint Axe
