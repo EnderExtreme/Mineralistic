@@ -1,11 +1,18 @@
 package com.rong.mineralistic;
 
+import com.google.common.eventbus.Subscribe;
+import com.google.common.eventbus.EventBus;
+
 import com.rong.mineralistic.effects.EntityColoredDustFX;
 import com.rong.mineralistic.handlers.OreDictHandler;
 import com.rong.mineralistic.handlers.RecipeHandler;
+import com.rong.mineralistic.handlers.fixes.TEAnvilPatchHandler;
 import com.rong.mineralistic.init.ModBlocks;
 import com.rong.mineralistic.init.ModItems;
 import com.rong.mineralistic.proxies.CommonProxy;
+
+import cpw.mods.fml.common.DummyModContainer;
+import cpw.mods.fml.common.LoadController;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
@@ -14,22 +21,23 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import net.minecraft.world.World;
+import net.minecraftforge.common.MinecraftForge;
 
 import java.util.Random;
 
 @Mod(modid = Mineralistic.MODID, name = Mineralistic.NAME, version = Mineralistic.VERSION, acceptedMinecraftVersions = "[1.7.10]", dependencies="after:*")
-public class Mineralistic {
+public class Mineralistic extends DummyModContainer {
 	
 	public static final String CLIENT_PROXY = "com.rong.mineralistic.proxies.ClientProxy";
 	public static final String COMMON_PROXY = "com.rong.mineralistic.proxies.CommonProxy";
 	public static final String MODID = "mineralistic";
 	public static final String NAME = "Mineralistic";
-	public static final String VERSION = "1.9";
+	public static final String VERSION = "2.0";
 
 	@SidedProxy(clientSide = CLIENT_PROXY, serverSide = COMMON_PROXY)
 	public static CommonProxy proxy;
 	
-	public static void spawnBlueDustFX(World world, double x, double y, double z) {
+	public static void spawnBlueDustFX(World world, double x, double y, double z) {		
 		proxy.spawnBlueDustFX(world, x, y, z);
 	}
 	
@@ -40,8 +48,7 @@ public class Mineralistic {
 	
 	@EventHandler
 	private void preInit(FMLPreInitializationEvent preInitEvent) {
-
-        OreManager.add("copper","Copper", 1);
+		OreManager.add("copper","Copper", 1);
         OreManager.add("diamond","Diamond", 2);
         OreManager.add("emerald","Emerald", 2);
         OreManager.add("gold","Gold", 2);
@@ -84,19 +91,26 @@ public class Mineralistic {
 		CommonProxy.init();
 		
 		LanguageRegistry.instance().addStringLocalization("death.attack.dmgBreakBlockWithHand","%1$s was splintered into pieces");
-		//LanguageRegistry.instance().addStringLocalization("death.attack.dmgBreakBlockWithHand","%1$s said Woodbye to the world");
 	}
 	
 	@EventHandler
 	private void init(FMLInitializationEvent initEvent) {
 		
-		OreDictHandler.init();
+		//OreDictHandler.init();
 		RecipeHandler.init();
+		MinecraftForge.EVENT_BUS.register(new TEAnvilPatchHandler());
 
 	}
 	
 	@EventHandler
 	private void postInit(FMLPostInitializationEvent postInitEvent) {
 		
+	}
+	
+	
+	@Override
+	public boolean registerBus(EventBus bus, LoadController controller) {
+		bus.register(this);
+		return true;
 	}
 }
