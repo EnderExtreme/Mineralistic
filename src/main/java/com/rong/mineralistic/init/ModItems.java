@@ -31,11 +31,11 @@ public class ModItems {
 	
 	public static final void init() {
 		
-		flintPickaxe = new ItemFlintPickaxe(flintMaterial).setUnlocalizedName(flint + "_" + "pickaxe").setTextureName(flint + "pickaxe");
-		flintAxe = new ItemFlintAxe(flintMaterial).setUnlocalizedName(flint + "_" + "axe").setTextureName(flint + "axe");
-		flintShovel = new ItemFlintShovel(flintMaterial).setUnlocalizedName(flint + "_" + "shovel").setTextureName(flint + "shovel");
-		flintHoe = new ItemFlintHoe(flintMaterial).setUnlocalizedName(flint + "_" + "hoe").setTextureName(flint + "hoe");
-		flintSword = new ItemFlintSword(flintMaterial).setUnlocalizedName(flint + "_" + "knife").setTextureName(flint+ "knife");
+		flintPickaxe = new ItemFlintPickaxe(flintMaterial).setUnlocalizedName(flint + "pickaxe").setTextureName(flint + "pickaxe");
+		flintAxe = new ItemFlintAxe(flintMaterial).setUnlocalizedName(flint + "axe").setTextureName(flint + "axe");
+		flintShovel = new ItemFlintShovel(flintMaterial).setUnlocalizedName(flint + "shovel").setTextureName(flint + "shovel");
+		flintHoe = new ItemFlintHoe(flintMaterial).setUnlocalizedName(flint + "hoe").setTextureName(flint + "hoe");
+		flintSword = new ItemFlintSword(flintMaterial).setUnlocalizedName(flint + "knife").setTextureName(flint + "knife");
 		
 		gravelFilter = new ItemGravelFilter().setUnlocalizedName("gravel_filter").setTextureName("gravel_filter");
 		woodMesh = new ItemWoodMesh().setUnlocalizedName("wood_mesh").setTextureName("wood_mesh");
