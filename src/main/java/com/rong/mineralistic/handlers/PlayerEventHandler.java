@@ -16,6 +16,7 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
 public class PlayerEventHandler {
 	
+	@SuppressWarnings("null")
 	@SubscribeEvent(priority = EventPriority.HIGHEST)
 	public void playerBlockPunchingDamage(/*PlayerInteractEvent event*/PlayerEvent.BreakSpeed event)
 	{
@@ -29,7 +30,7 @@ public class PlayerEventHandler {
 			//Block block = event.world.getBlock(x, y, z);
 			ItemStack itemstack = player.getCurrentEquippedItem();
 
-			if (itemstack == null || itemstack.getItem().isItemTool(itemstack))
+			if (itemstack == null || !itemstack.getItem().isItemTool(itemstack))
 			{
 				if (block == Blocks.log || block == Blocks.log2)
 				{

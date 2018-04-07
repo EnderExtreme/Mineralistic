@@ -10,6 +10,7 @@ import com.rong.mineralistic.handlers.fixes.TEAnvilPatchHandler;
 import com.rong.mineralistic.init.ModBlocks;
 import com.rong.mineralistic.init.ModItems;
 import com.rong.mineralistic.proxies.CommonProxy;
+import com.rong.mineralistic.tileentities.TileEntityLogPile;
 
 import cpw.mods.fml.common.DummyModContainer;
 import cpw.mods.fml.common.LoadController;
@@ -19,6 +20,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
@@ -91,6 +93,8 @@ public class Mineralistic extends DummyModContainer {
 		CommonProxy.init();
 		
 		LanguageRegistry.instance().addStringLocalization("death.attack.dmgBreakBlockWithHand","%1$s was splintered into pieces");
+		
+		GameRegistry.registerTileEntity(TileEntityLogPile.class, "tileEntityLogPile");   
 	}
 	
 	@EventHandler

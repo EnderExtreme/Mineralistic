@@ -1,7 +1,12 @@
 package com.rong.mineralistic.init;
 
+import com.rong.mineralistic.blocks.BlockDoneCharcoal;
+import com.rong.mineralistic.blocks.BlockLogPile;
 import com.rong.mineralistic.blocks.BlockOreGravelEnrichedNaquadah;
 import com.rong.mineralistic.blocks.BlockOreGravelZapQuartz;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
 
 public class ModBlocks {
 
@@ -14,6 +19,9 @@ public class ModBlocks {
 	public static BlockOreGravelZapQuartz oreZappy;
 	public static BlockOreGravelEnrichedNaquadah oreENaquadah;
 	
+	public static Block logPile;
+	public static Block doneCharcoal;
+	
 	public static final void init() {
 
 		/*oreZappy = new BlockOreGravelZapQuartz(true);
@@ -21,5 +29,11 @@ public class ModBlocks {
 
         GameRegistry.registerBlock(oreZappy, gravelOreUnlocalizedName + "zapquartz");
         GameRegistry.registerBlock(oreENaquadah, gravelOreUnlocalizedName + "enrichednaquadah");*/
+		
+		logPile = new BlockLogPile();
+		doneCharcoal = new BlockDoneCharcoal();
+		
+		GameRegistry.registerBlock(logPile, "log_pile");
+		GameRegistry.registerBlock(doneCharcoal, "done_charcoal");	
     }
 }
